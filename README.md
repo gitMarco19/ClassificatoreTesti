@@ -1,5 +1,5 @@
 # Obiettivo
-Scrivere un programma che realizzi un classificatore binario di testi utilizzando tecniche di classificazione supervisionata <bold>"nearest neighbors"</bold> basate sul conteggio delle occorrenze delle singole parole in un testo.
+Scrivere un programma che realizzi un classificatore binario di testi utilizzando tecniche di classificazione supervisionata ***"nearest neighbors"*** basate sul conteggio delle occorrenze delle singole parole in un testo.
 
 Il programma si dovrà articolare in due fasi: <br>
 Una fase di addestramento (training) in cui il programma riceve in input:
@@ -42,7 +42,7 @@ Il formato dei file di input nella fase di testing è il seguente:
 - Il file dizionario (parametro <file_dizionario>) ha lo stesso formato descritto sopra.
 - Se n è il numero di file "OK", m è il numero di file "SPAM" e d è il numero di parole lecite acquisite nella fase di training, il file delle occorrenze (parametro <file_occorrenze>) contiene un numero di righe pari a n + m + 2 e un numero di colonne pari a d + 1. All’interno il file è organizzato come segue:
 
-OK
+OK <br>
 <file_OK_1> <occ_1_1> ... <occ_1_d> <br>
 ... <br>
 <file_OK_n> <occ_n_1> ... <occ_n_d> <br>
@@ -62,9 +62,9 @@ Nelle due fasi, il programma non prende nessun altro tipo di input se non quello
 # Formato di output
 Il formato del file di output della prima fase (training) è descritto sopra. L’output della seconda fase (testing) è una serie di p righe a console in cui ogni riga contiene le seguenti informazioni:
 
-<file_1> <etichetta>
-...
-<file_p> <etichetta>
+<file_1> <etichetta> <br>
+... <br>
+<file_p> <etichetta> <br>
 
-dove <file_i> è il nome di uno dei p file da classificare contenuto nella direcotry passata in input alla seconda fase e <etichetta> è un valore a scelta fra OK oppure SPAM.
+dove <file_i> è il nome di uno dei p file da classificare contenuto nella direcotry passata in input alla seconda fase e "<etichetta>" è un valore a scelta fra OK oppure SPAM.
 Nelle due fasi, il programma non emette nessun altro tipo di output se non quello specificato.
