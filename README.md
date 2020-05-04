@@ -11,6 +11,7 @@ In questa fase il programma analizza i file in ingresso e salva su un file di ou
 Una fase di classificazione (testing) in cui il programma riceve in input:
 - il file contenente i dati relativi alle occorrenze generato nella fase precedente e
 - un insieme di file da classificare come “OK” e “SPAM”.
+
 L’output di questa fase è la classificazione risultante.
 
 # Specifiche funzionali
