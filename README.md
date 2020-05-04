@@ -26,7 +26,7 @@ dove:
 
 La seconda fase del programma (fase di testing) deve essere invocata tramite la linea di comando: <br>
 
-java Main TEST <file_dizionario> <file_occorrenze> <directory_testi>
+	java Main TEST <file_dizionario> <file_occorrenze> <directory_testi>
 
 dove: <br>
 <file_dizionario> è il nome del file completo di percorso contenente l’elenco di parole lecite; <br>
@@ -64,9 +64,9 @@ Nelle due fasi, il programma non prende nessun altro tipo di input se non quello
 Il formato del file di output della prima fase (training) è descritto sopra. <br>
 L’output della seconda fase (testing) è una serie di p righe a console in cui ogni riga contiene le seguenti informazioni:
 
-<file_1> "etichetta" <br>
-... <br>
-<file_p> "etichetta" <br>
+	<file_1> <etichetta>
+	...
+	<file_p> <etichetta>
 
 dove <file_i> è il nome di uno dei p file da classificare contenuto nella direcotry passata in input alla seconda fase e "etichetta" è un valore a scelta fra OK oppure SPAM.
 Nelle due fasi, il programma non emette nessun altro tipo di output se non quello specificato.
