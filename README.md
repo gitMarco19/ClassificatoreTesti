@@ -3,14 +3,14 @@ Scrivere un programma che realizzi un classificatore binario di testi utilizzand
 
 Il programma si dovrà articolare in due fasi: <br>
 Una fase di addestramento (training) in cui il programma riceve in input:
-– un file contenente tutte le parole ammissibili e
-– due insiemi di file, uno etichettato come “SPAM” e uno etichettato come “OK”.
+- un file contenente tutte le parole ammissibili e
+- due insiemi di file, uno etichettato come “SPAM” e uno etichettato come “OK”.
 
 In questa fase il programma analizza i file in ingresso e salva su un file di output i dati relativi alle occorrenze delle singole parole nei file “SPAM” e nei file “OK”. L’output di questa fase è un file contenente informazioni sulle occorrenze delle parole nei file.
 
 Una fase di classificazione (testing) in cui il programma riceve in input:
-– il file contenente i dati relativi alle occorrenze generato nella fase precedente e
-– un insieme di file da classificare come “OK” e “SPAM”.
+- il file contenente i dati relativi alle occorrenze generato nella fase precedente e
+- un insieme di file da classificare come “OK” e “SPAM”.
 L’output di questa fase è la classificazione risultante.
 
 # Specifiche funzionali
@@ -19,9 +19,9 @@ La prima fase del programma (fase di training) deve essere invocata tramite la l
 	java Main TRAIN <file_dizionario> <directory_ok> <directory_spam> <file_occorrenze>
 
 dove:
-<file_dizionario> è il nome del file completo di percorso contenente l’elenco di parole lecite;
-<directory_ok> (<directory_spam>) è il nome della directory completa di percorso in cui sono contenuti i file "OK" ("SPAM") per l’addestramento;
-<file_occorrenze> è il nome del file completo di percorso su cui viene registrato il risultato della fase di training.
+<file_dizionario> è il nome del file completo di percorso contenente l’elenco di parole lecite; <br>
+<directory_ok> (<directory_spam>) è il nome della directory completa di percorso in cui sono contenuti i file "OK" ("SPAM") per l’addestramento; <br>
+<file_occorrenze> è il nome del file completo di percorso su cui viene registrato il risultato della fase di training. <br>
 
 La seconda fase del programma (fase di testing) deve essere invocata tramite la linea di comando: <br>
 
@@ -54,17 +54,18 @@ SPAM <br>
 dove: <br>
 <file_OK_i> è il nome dello i-esimo file "OK" letto nella fase di training; <br>
 <file_SPAM_i> è il nome dello i-esimo file "SPAM"; <br>
-<occ_i_j> è il numero di occorrenze della j-esima parola del dizionario nello i-esimo file ("OK" o "SPAM"). <br><br>
+<occ_i_j> è il numero di occorrenze della j-esima parola del dizionario nello i-esimo file ("OK" o "SPAM").
 
 Il file è suddiviso in due sezioni, la prima delimitata dalla parola chiave OK e la seconda delimitata dalla parola chiave SPAM. <br>
 Nelle due fasi, il programma non prende nessun altro tipo di input se non quello specificato e nelle modalità indicate.
 
 # Formato di output
-Il formato del file di output della prima fase (training) è descritto sopra. L’output della seconda fase (testing) è una serie di p righe a console in cui ogni riga contiene le seguenti informazioni:
+Il formato del file di output della prima fase (training) è descritto sopra. <br>
+L’output della seconda fase (testing) è una serie di p righe a console in cui ogni riga contiene le seguenti informazioni:
 
-<file_1> <etichetta> <br>
+<file_1> "etichetta" <br>
 ... <br>
-<file_p> <etichetta> <br>
+<file_p> "etichetta" <br>
 
-dove <file_i> è il nome di uno dei p file da classificare contenuto nella direcotry passata in input alla seconda fase e "<etichetta>" è un valore a scelta fra OK oppure SPAM.
+dove <file_i> è il nome di uno dei p file da classificare contenuto nella direcotry passata in input alla seconda fase e "etichetta" è un valore a scelta fra OK oppure SPAM.
 Nelle due fasi, il programma non emette nessun altro tipo di output se non quello specificato.
