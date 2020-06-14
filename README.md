@@ -72,6 +72,6 @@ L’output della seconda fase (testing) è una serie di p righe a console in cui
 
 dove: <br>
 <file_i> è il nome di uno dei p file da classificare contenuto nella direcotry passata in input alla seconda fase; <br>
-<etichetta> è un valore a scelta fra OK oppure SPAM. <br>
+"etichetta" è un valore a scelta fra OK oppure SPAM. <br>
 	
 Nelle due fasi, il programma non emette nessun altro tipo di output se non quello specificato.
