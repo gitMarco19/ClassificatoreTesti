@@ -42,6 +42,7 @@ Il formato dei file di input nella fase di training è il seguente:
 Il formato dei file di input nella fase di testing è il seguente:
 - Il file dizionario (parametro <file_dizionario>) ha lo stesso formato descritto sopra.
 - Se n è il numero di file "OK", m è il numero di file "SPAM" e d è il numero di parole lecite acquisite nella fase di training, il file delle occorrenze (parametro <file_occorrenze>) contiene un numero di righe pari a n + m + 2 e un numero di colonne pari a d + 1. <br>
+
 All’interno il file è organizzato come segue:
 
 	OK <br>
