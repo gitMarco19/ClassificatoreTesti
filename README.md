@@ -45,19 +45,19 @@ Il formato dei file di input nella fase di testing è il seguente:
 
 All’interno il file è organizzato come segue:
 
-	OK <br>
-	<file_OK_1> <occ_1_1> ... <occ_1_d> <br>
-	...<br>
-	<file_OK_n> <occ_n_1> ... <occ_n_d><br>
-	SPAM <br>
-	<file_SPAM_1> <occ_1_1> ... <occ_1_d> <br>
-	... <br>
-	<file_SPAM_m> <occ_m_1> ... <occ_m_d> <br>
+	OK
+	<file_OK_1> <occ_1_1> ... <occ_1_d>
+	...
+	<file_OK_n> <occ_n_1> ... <occ_n_d>
+	SPAM
+	<file_SPAM_1> <occ_1_1> ... <occ_1_d>
+	...
+	<file_SPAM_m> <occ_m_1> ... <occ_m_d>
 
-dove: <br>
-<file_OK_i> è il nome dello i-esimo file "OK" letto nella fase di training; <br>
-<file_SPAM_i> è il nome dello i-esimo file "SPAM"; <br>
-<occ_i_j> è il numero di occorrenze della j-esima parola del dizionario nello i-esimo file ("OK" o "SPAM").
+dove:
+- <file_OK_i> è il nome dello i-esimo file "OK" letto nella fase di training;
+- <file_SPAM_i> è il nome dello i-esimo file "SPAM";
+- <occ_i_j> è il numero di occorrenze della j-esima parola del dizionario nello i-esimo file ("OK" o "SPAM").
 
 Il file è suddiviso in due sezioni, la prima delimitata dalla parola chiave OK e la seconda delimitata dalla parola chiave SPAM. <br>
 Nelle due fasi, il programma non prende nessun altro tipo di input se non quello specificato e nelle modalità indicate.
