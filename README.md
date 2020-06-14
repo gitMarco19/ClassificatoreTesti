@@ -54,10 +54,10 @@ All’interno il file è organizzato come segue:
 	...
 	<file_SPAM_m> <occ_m_1> ... <occ_m_d>
 
-dove:
-- <file_OK_i> è il nome dello i-esimo file "OK" letto nella fase di training;
-- <file_SPAM_i> è il nome dello i-esimo file "SPAM";
-- <occ_i_j> è il numero di occorrenze della j-esima parola del dizionario nello i-esimo file ("OK" o "SPAM").
+dove: <br>
+<file_OK_i> è il nome dello i-esimo file "OK" letto nella fase di training; <br>
+<file_SPAM_i> è il nome dello i-esimo file "SPAM"; <br>
+<occ_i_j> è il numero di occorrenze della j-esima parola del dizionario nello i-esimo file ("OK" o "SPAM").
 
 Il file è suddiviso in due sezioni, la prima delimitata dalla parola chiave OK e la seconda delimitata dalla parola chiave SPAM. <br>
 Nelle due fasi, il programma non prende nessun altro tipo di input se non quello specificato e nelle modalità indicate.
